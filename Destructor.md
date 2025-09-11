@@ -9,7 +9,7 @@ An init() method that initializes name and age attributes.
 A printDetail() method that prints the student's name and age.
 A del() method that prints a message indicating the student object is deleted.
 Create an object s1 of the Student class, passing "Vishvajit Rao" as the name and 22 as the age.
-Call the printDetail() method on s1 to print the student's details.
+Call the printDetail() method on s1 to print the student's details. 
 Delete the s1 object using del s1, triggering the del() method.
 Terminate the program.
 # PROGRAM
