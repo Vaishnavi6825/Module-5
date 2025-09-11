@@ -26,6 +26,7 @@ obj=add()
 obj.dis()
 ```
 
+
 # OUTPUT
 <img width="1138" height="207" alt="image" src="https://github.com/user-attachments/assets/3cfbaea3-f0cd-4fe9-bedf-82dc5641cf0f" />
 
