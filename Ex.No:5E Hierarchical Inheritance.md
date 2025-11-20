@@ -1,4 +1,4 @@
-# Ex.No:5C Multi-level Inheritance
+# Ex.No:5E Multi-level Inheritance
 ## AIM
 To Write a Python program to Get the name, age and location of a person and display using Multilevel inheritance.
 
