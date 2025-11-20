@@ -1,54 +1,77 @@
-# Ex.No:5E Multi-level Inheritance
-## AIM
-To Write a Python program to Get the name, age and location of a person and display using Multilevel inheritance.
+# Ex.No:5E Hierarchical Inheritance
+# AIM
+To write a Python program to get the employee and doctor details and display them using hierarchical inheritance. Create a parent (base) class named Details and two child (derived) classes named Employee and Doctor.
 
-### ALGORITHM
-1.Begin the program.
+# ALGORITHM
+Begin the program. Create a class Details with an init method to initialize three attributes: id, name, and gender. Define a method display_details() to print the values of id, name, and gender. Create a class Employee that inherits from the Details class. Add two additional attributes: company and department. Override the display_details() method to print the employee-specific attributes (company and department) along with the inherited details. Create a class Doctor that also inherits from the Details class. Add two additional attributes: hospital and department. Override the display_details() method to print the doctor-specific attributes (hospital and department) along with the inherited details. Accept input for employee and doctor details. Create objects of Employee and Doctor using the input. Call the display_details() method for both objects to print the details. Terminate the program.
 
-2.Define a class Parent with: An init() method to initialize name. A getName() method to return the name.
+# PROGRAM
+~~~
+Reg-212222060245 Name- Singamala Rakshitha
+# hierarchical inheritance
 
-3.Define a class Child that inherits from Parent with: An init() method to initialize name and age (calling the parent's constructor for name). A getAge() method to return the age.
+class Details:
+    def __init__(self):
+        self.__id="<No Id>"
+        self.__name="<No Name>"
+        self.__gender="<No Gender>"
+    def setData(self,id,name,gender):
+        self.__id=id
+        self.__name=name
+        self.__gender=gender
+    def showData(self):
+        print("Id: ",self.__id)
+        print("Name: ", self.__name)
+        print("Gender: ", self.__gender)
 
-4.Define a class Grandchild that inherits from Child with: An init() method to initialize name, age, and location (calling the child's constructor for name and age).
+class Employee(Details): #Inheritance
+    def __init__(self):
+        self.__company="<No Company>"
+        self.__dept="<No Dept>"
+    def setEmployee(self,id,name,gender,comp,dept):
+        self.setData(id,name,gender)
+        self.__company=comp
+        self.__dept=dept
+    def showEmployee(self):
+        self.showData()
+        print("Hospital: ", self.__company)
+        print("Department: ", self.__dept)
 
-5.A getLocation() method to return the location.
+class Patient(Details): #Inheritance
+    def __init__(self):
+        self.__hospital="<No Hospital>"
+        self.__dept="<No Dept>"
+    def setEmployee(self,id,name,gender,hos,dept):
+        self.setData(id,name,gender)
+        self.__hospital=hos
+        self.__dept=dept
+    def showEmployee(self):
+        self.showData()
+        print("Hospital: ", self.__hospital)
+        print("Department: ", self.__dept)
 
-6.Take name, age, and location as input from the user.
-
-7.Create an object gc of the Grandchild class with the given inputs.
-
-8.Print the name, age, and location using getName(), getAge(), and getLocation() methods.
-9.Terminate the program.
-### PROGRAM
-```
-# REGNO:-212222060121
-# Name:-Kiruthika M
-class Parent:
-   def __init__(self,name):
-     self.name = name
-   def getName(self):
-     return self.name
-class Child(Parent):
-   def __init__(self,name,age):
-     Parent.__init__(self,name)
-     self.age = age
-   def getAge(self):
-     return self.age
-class Grandchild(Child):
-   def __init__(self,name,age,location):
-     Child.__init__(self,name,age)
-     self.location=location
-   def getLocation(self):
-     return self.location
+id=int(input())
 name=input()
-age=int(input())
-loc=input()
-gc = Grandchild(name,age,loc)
-print(gc.getName(), gc.getAge(), gc.getLocation())
-```
+gender=input()
+comp=input()
+dept=input()
+id1=int(input())
+nam=input()
+gen=input()
+hosp=input()
+dep=input()
+
+print("Doctor Object")
+e=Employee()
+e.setEmployee(id,name,gender,comp,dept)
+e.showEmployee()
+print("\nPatient Object")
+d = Patient()
+d.setEmployee(id1, nam, gen, hosp, dep)
+d.showEmployee()
+~~~
 # OUTPUT
-<img width="1158" height="264" alt="image" src="https://github.com/user-attachments/assets/aaa707b0-73cf-497b-87a1-f6791d07d805" />
+<img width="1183" height="465" alt="image" src="https://github.com/user-attachments/assets/c4b3a3d7-e289-44fa-878e-3e058a797343" />
 
-
-# RESULT
-Thus a Python program to Get the name, age and location of a person and display using Multilevel inheritance has been implemented successfully.
+# RESULT 
+Thus the program to get the employee and doctor details and display them using hierarchical inheritance has been implemented and executed successfully.
