@@ -7,7 +7,7 @@ Begin the program. Create a class Details with an init method to initialize thre
 
 # PROGRAM
 ~~~
-Reg-212222060245 Name- Singamala Rakshitha
+Reg-212222060121 Name- Kiruthika M
 # hierarchical inheritance
 
 class Details:
