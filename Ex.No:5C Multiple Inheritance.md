@@ -1,4 +1,4 @@
-# Exp.No:23
+Ex.No:5C
 Multiple Inheritance
 # AIM
 To write a Python program to get the name, attendance, and ID of a student and check if they are eligible for the next module using multiple inheritance. If attendance > 80, the student is eligible; otherwise, not eligible.
