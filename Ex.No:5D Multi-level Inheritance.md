@@ -1,4 +1,4 @@
-# Exp.No:24
+# Ex.No:5D
 Multi-level Inheritance
 # AIM
 To write a Python program to get the name, age, and ID of a person and display them using multilevel inheritance.
@@ -13,7 +13,7 @@ Define the PersonDetails class that inherits from the Person class:
 2.Inside the PersonDetails class, define the __init__ method (constructor) with three parameters: name, age, and person_id.
 Inside the __init__ method, call the __init__ method of the Person class using super() to initialize name and age.
 Assign person_id to self.person_id.
-Define the DisplayDetails class that inherits from the PersonDetails class:
+Define the DisplayDetails class that inherits from the Person Details class:
 
 3.Inside the DisplayDetails class, define the __init__ method (constructor) with three parameters: name, age, and person_id.
 Inside the __init__ method, call the __init__ method of the PersonDetails class using super() to initialize name, age, and person_id.
